@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondamento-regular {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: black;
+}
+
+.home-container {
+  background-image: url(IMAGES/marble-black.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-size: cover;
+  height: 100%;
+}
+
+.slogan {
+  background: black;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+}
+
+.slogan p {
+  width: max-content;
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  transition: background 0.3s;
+  font-size: 24px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.lang-icons {
+  width: max-content;
+  float: right;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.lang-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.about-container {
+  display: flex;
+  place-self: anchor-center;
+  margin-top: 55px;
+}
+
+.photos-gauche {
+  display: inline-grid;
+  margin-right: 20px;
+  margin-top: 95px;
+}
+
+.photos-gauche img {
+  border-radius: 15px;
+  padding: 5px 0px;
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.429);
+}
+
+.biography-content {
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  margin-top: 20px;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  block-size: auto;
+}
+
+.biography-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.biography-content-1 {
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    font-size: 23px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.biography-content-2 {
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    font-size: 23px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid white;
+    padding: 15px;
+        border-radius: 10px;
+
+}
+
+.biography-content-3 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    font-size: 23px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px;
+
+}
+
+.biography-content-4 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    font-size: 23px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+        border-radius: 10px;
+        padding: 15px;
+
+}
+
+.photos-droite {
+  display: inline-grid;
+  margin-left: 20px;
+  margin-top: 95px;
+  
+}
+
+.photos-droite img {
+  border-radius: 15px;
+  padding: 5px 0px;
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.429);
+
+}
+
+#team {
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  justify-self: anchor-center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.galery-container {
+    grid-template-areas: ;
+}
