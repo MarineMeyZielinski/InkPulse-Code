@@ -30,6 +30,7 @@ a:active {
   color: black;
 }
 
+/* Background */
 .home-container {
   background-image: url(IMAGES/marble-black.png);
   background-repeat: no-repeat;
@@ -38,6 +39,7 @@ a:active {
   height: 100%;
 }
 
+/* Bannière avec le slogan */
 .slogan {
   background: black;
   background: rgba(0, 0, 0, 0.3);
@@ -50,11 +52,13 @@ a:active {
   font-style: regular italic;
 }
 
+/* Slogan */
 .slogan p {
   width: max-content;
   margin-left: auto;
 }
 
+/* Barre de navigation */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -90,6 +94,7 @@ a:active {
   text-decoration: underline;
 }
 
+/* Icone des langues ans la navbar */
 .lang-icons {
   width: max-content;
   float: right;
@@ -104,6 +109,8 @@ a:active {
   cursor: pointer;
 }
 
+
+/* Conteneur de la page Qui Sommes Nous */
 .about-container {
   display: flex;
   place-self: anchor-center;
@@ -209,6 +216,7 @@ a:active {
   text-decoration: underline;
 }
 
+/* Titre des 3 galeries */
 .galery-title h2 {
   color: white;
   /* border: 2px solid green; */
@@ -221,14 +229,13 @@ a:active {
   margin-top: 35px;
 }
 
-/* test */
+/* Formation des galeries */
 .galery-container img {
-  /* width: 300px;
-    height: 350px; */
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
+
 /* Mosaïque */
 .galery-container {
   display: grid;
@@ -299,7 +306,104 @@ a:active {
 }
 .img-9 {
   grid-column: 3 /4;
-  grid-row: 1 / span 2; /*prend toute la hauteur*/
-  /* height: 700px !important; */
-  /* object-fit: contain; */
+  grid-row: 1 / span 2; 
+}
+
+/* Mise en place de la page Infos Pratiques */
+.information-container {
+  display: flex;
+  /* border: 2px solid red; */
+  display: flex;
+  place-self: anchor-center;
+  margin-top: 55px;
+  margin-top: 100px;
+}
+
+.adresse-content {
+  /* border: 2px solid green; */
+  border-right: 3px solid white;
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  justify-self: anchor-center;
+  font-size: 30px;
+  width: 500px;
+
+}
+.adresse-content h2 {
+  text-decoration: underline;
+  justify-self: center;
+  font-size: 35px;
+}
+
+.adresse-content p {
+    height: 200px;
+    /* border: 2px solid pink; */
+    align-content: center;
+    text-align: center; 
+}
+
+.map-content {
+    /* border: 2px solid yellow; */
+    height: 300px;
+    align-content: center;
+    justify-self: center;
+}
+.horaires-content {
+  /* border: 2px solid blue; */
+  border-right: 3px solid white;
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  justify-self: anchor-center;
+  font-size: 30px;
+  width: 550px;
+}
+.horaires-content h2 {
+    justify-self: anchor-center;
+    text-decoration: underline;
+    justify-self: center;
+    font-size: 35px;
+}
+
+.horaires-content p {
+    /* border: 2px solid white; */
+    align-content: center;
+    text-align: left;
+    height: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.hygiène-content {
+  /* border: 2px solid violet; */
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  justify-self: anchor-center;
+  font-size: 30px;
+  width: 500px;
+}
+
+.hygiène-content h2 {
+    justify-self: anchor-center;
+    text-decoration: underline;
+    justify-self: center;
+    font-size: 35px;
+}
+.hygiène-content p {
+    /* border: 2px solid rgb(0, 255, 51); */
+    align-content: center;
+    text-align: center;
+    height: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hygiène-content a {
+    text-decoration: underline;
 }
