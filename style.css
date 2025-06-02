@@ -19,6 +19,7 @@ body {
 header {
   text-align: center;
   padding: 0px;
+  height: 17%;
 }
 
 a {
@@ -30,6 +31,10 @@ a:active {
   color: black;
 }
 
+main {
+  /* border: 5px solid red; */
+  height: 77%;
+}
 /* Background */
 .home-container {
   background-image: url(IMAGES/marble-black.png);
@@ -108,7 +113,6 @@ a:active {
   margin: 0 5px;
   cursor: pointer;
 }
-
 
 /* Conteneur de la page Qui Sommes Nous */
 .about-container {
@@ -245,7 +249,7 @@ a:active {
   margin-top: 15px;
   place-self: center;
   height: 670px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -253,6 +257,8 @@ a:active {
 .galery-container > div {
   /* border: 1px solid red; */
   overflow: hidden;
+  /* padding: 2px; */
+  box-shadow: 5px 5px 7px rgba(40, 94, 107, 0.452);
 }
 
 .img-1 {
@@ -292,6 +298,7 @@ a:active {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+
 .img-7 {
   /* width: 300px;
     height: 350px; */
@@ -306,7 +313,7 @@ a:active {
 }
 .img-9 {
   grid-column: 3 /4;
-  grid-row: 1 / span 2; 
+  grid-row: 1 / span 2;
 }
 
 /* Mise en place de la page Infos Pratiques */
@@ -329,26 +336,25 @@ a:active {
   justify-self: anchor-center;
   font-size: 30px;
   width: 500px;
-
 }
-.adresse-content h2{
+.adresse-content h2 {
   text-decoration: underline;
   justify-self: center;
   font-size: 35px;
 }
 
 .adresse-content p {
-    height: 201px;
-    /* border: 2px solid pink; */
-    align-content: center;
-    text-align: center; 
+  height: 201px;
+  /* border: 2px solid pink; */
+  align-content: center;
+  text-align: center;
 }
 
 .map-content {
-    /* border: 2px solid yellow; */
-    height: 300px;
-    align-content: center;
-    justify-self: center;
+  /* border: 2px solid yellow; */
+  height: 300px;
+  align-content: center;
+  justify-self: center;
 }
 .horaires-content {
   /* border: 2px solid blue; */
@@ -362,20 +368,20 @@ a:active {
   width: 550px;
 }
 .horaires-content h2 {
-    justify-self: anchor-center;
-    text-decoration: underline;
-    justify-self: center;
-    font-size: 35px;
+  justify-self: anchor-center;
+  text-decoration: underline;
+  justify-self: center;
+  font-size: 35px;
 }
 
 .horaires-content p {
-    /* border: 2px solid white; */
-    align-content: center;
-    text-align: left;
-    height: 500px;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 30px;
+  /* border: 2px solid white; */
+  align-content: center;
+  text-align: left;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 .hygiène-content {
@@ -390,20 +396,191 @@ a:active {
 }
 
 .hygiène-content h2 {
-    justify-self: anchor-center;
-    text-decoration: underline;
-    justify-self: center;
-    font-size: 35px;
+  justify-self: anchor-center;
+  text-decoration: underline;
+  justify-self: center;
+  font-size: 35px;
 }
+
 .hygiène-content p {
-    /* border: 2px solid rgb(0, 255, 51); */
-    align-content: center;
-    text-align: center;
-    height: 500px;
-    margin-right: 20px;
-    margin-left: 20px;
+  /* border: 2px solid rgb(0, 255, 51); */
+  align-content: center;
+  text-align: center;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .hygiène-content a {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.cicatrisation-container {
+  /* border: 2px solid green; */
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+}
+
+.cicatrisation-title {
+  /* border: 2px solid red; */
+  margin-top: 70px;
+  text-decoration: underline;
+}
+
+.cicatrisation-title h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.cicatrisation-question {
+  /* border: 2px solid rgb(255, 0, 153); */
+  text-align: center;
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.cicatrisation-content {
+  /* border: 2px solid blue; */
+  font-size: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.cicatrisation-content p {
+text-align: center;
+}
+
+.cicatrisation-advice {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  margin-top: 30px;
+}
+
+.info-contact-container {
+color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  /* border: 2px solid rgb(255, 251, 0); */
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  /* margin-top: 30px; */
+}
+
+.contact-title {
+font-size: 35px;
+text-align: center;
+text-decoration: underline;
+}
+
+.info-contact-content p {
+font-size: 30px;
+text-align: center;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.click-to-contact {
+  color: rgb(0, 0, 0);
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 60%;
+  text-align: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  text-decoration: none;
+}
+
+
+.click-to-contact a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.514);
+  transition: background 0.3s;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.click-to-contact img {
+  width: 100px;
+  height: 100px;
+}
+
+.item-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  
+}
+ 
+
+.item-2 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 5;
+  
+}
+
+.item-3 {
+  grid-row: 1 / 2;
+  grid-column: 5 / 7;
+  
+}
+
+.item-4 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+ 
+}
+
+.item-5 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.item-6 {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+  
+}
+
+.item-7 {
+  grid-row: 2 / 3;
+  grid-column: 5 / 7;
+  
+  
+}
+
+
+
+footer {
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  display: flex;
+  background-color: black;
+  /* border: 2px solid blue; */
+  justify-content: space-around;
+  align-items: anchor-center;
+  
+  
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin-left: -320px;
+  cursor: pointer;
 }
