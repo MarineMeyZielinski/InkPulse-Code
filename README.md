@@ -21,7 +21,7 @@ Ce site a été développé avec :
 
 ![Aperçu page d'accueil](./assets/home-page.png)
 ![Aperçu page de l'équipe](./assets/about.png)
-![Aperçu page Galerie de Joy](./galerie-joy.png)
+![Aperçu page Galerie de Joy](./assets/galerie-joy.png)
 ![Aperçu page Galerie de Ronnie](./assets/galerie-ronnie.png)
 ![Aperçu page Galerie de Billy](./assets/galerie-billy.png)
 ![Aperçu page Infos pratiques](./assets/infos.png)
