@@ -248,8 +248,7 @@ main {
   grid-template-rows: 1fr 1fr;
   margin-top: 15px;
   place-self: center;
-  height: 670px;
-  /* overflow: hidden; */
+  height: 90%;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -257,57 +256,42 @@ main {
 .galery-container > div {
   /* border: 1px solid red; */
   overflow: hidden;
-  /* padding: 2px; */
-  box-shadow: 5px 5px 7px rgba(40, 94, 107, 0.452);
+  /* box-shadow: 5px 5px 7px rgba(40, 94, 107, 0.452); */
 }
 
 .img-1 {
-  object-fit: cover;
-  /* width: 100px;
-    height: 150px; */
+
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 .img-2 {
-  /* width: 300px;
-    height: 350px; */
+
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 .img-3 {
-  /* width: 300px;
-    height: 350px; */
   grid-column: 4 / 5;
   grid-row: 1 / 2;
 }
 .img-4 {
-  /* width: 300px;
-    height: 350px; */
   grid-column: 5 / 6;
   grid-row: 1 / 2;
 }
 .img-5 {
-  /* width: 300px;
-    height: 350px; */
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 .img-6 {
-  /* width: 300px;
-    height: 350px; */
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 .img-7 {
-  /* width: 300px;
-    height: 350px; */
   grid-column: 4 / 5;
   grid-row: 2 / 3;
 }
 .img-8 {
-  /* width: 300px;
-    height: 350px; */
+
   grid-column: 5 / 6;
   grid-row: 2 / 3;
 }
@@ -322,8 +306,13 @@ main {
   /* border: 2px solid red; */
   display: flex;
   place-self: anchor-center;
-  margin-top: 55px;
-  margin-top: 100px;
+  /* margin-top: 55px; */
+  /* margin-top: 100px; */
+  /* height: 100%; */
+}
+
+.test {
+  height: 18%;
 }
 
 .adresse-content {
@@ -502,16 +491,17 @@ margin-right: 50px;
   text-decoration: none;
 }
 
-
-.click-to-contact a {
-  color: black;
-  text-decoration: none;
+.click-to-contact .button {
   padding: 10px 15px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.514);
   transition: background 0.3s;
   font-size: 24px;
   text-decoration: underline;
+}
+
+.click-to-contact a {
+  color: black;
 }
 
 .click-to-contact img {
@@ -525,7 +515,6 @@ margin-right: 50px;
   
 }
  
-
 .item-2 {
   grid-row: 1 / 2;
   grid-column: 3 / 5;
@@ -583,4 +572,52 @@ footer img {
   height: 50px;
   margin-left: -320px;
   cursor: pointer;
+}
+
+.faq-title {
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  text-align: center;
+  text-decoration: underline;
+  height: 10%;
+  margin-top: 30px;
+}
+
+details {
+  color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  text-align: justify;
+  /* background-color: blue; */
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+}
+
+details summary {
+  padding: 15px;
+}
+
+/* .mentions-container h1 {
+    color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px; */
+/* } */
+
+.mentions-container {
+   color: white;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  text-align: center;
+  text-decoration: underline;
+   font-size: 15px;
 }
