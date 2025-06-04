@@ -125,6 +125,7 @@ main {
   display: flex;
   place-self: anchor-center;
   margin-top: 55px;
+  border: 2px solid white;
 }
 
 .about-container-responsive {
@@ -135,6 +136,7 @@ main {
   display: inline-grid;
   margin-right: 20px;
   margin-top: 95px;
+  border: 2px solid green;
 }
 
 .photos-gauche img {
@@ -154,6 +156,7 @@ main {
   display: flex;
   flex-direction: column;
   block-size: auto;
+  border: 2px solid red;
 }
 
 .biography-text {
@@ -212,6 +215,7 @@ main {
   display: inline-grid;
   margin-left: 20px;
   margin-top: 95px;
+  border: 2px solid purple;
 }
 
 .photos-droite img {
@@ -267,6 +271,10 @@ main {
   /* border: 1px solid red; */
   overflow: hidden;
   /* box-shadow: 5px 5px 7px rgba(40, 94, 107, 0.452); */
+}
+
+.galery-container-responsive {
+  display: none;
 }
 
 .img-1 {
@@ -326,6 +334,10 @@ main {
   /* margin-top: 55px; */
   /* margin-top: 100px; */
   /* height: 100%; */
+}
+
+.information-container-responsive {
+  display: none;
 }
 
 .test {
@@ -655,28 +667,27 @@ details summary {
 @media screen and (max-width: 412px) {
 
   body {
-    height: 300vh;
+    height: auto;
   }
 
   header {
     text-align: center;
     padding: 0px;
-    height: 3%;
+    /* height: 3%; */
   }
   
   main {
     border: 5px solid red;
   height: 95%;
-  margin-top: 60px;
+  margin-top: -60px;
   }
   .home-container {
     background-image: url(IMAGES/marble-black-responsive.png);
-    background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-repeat: repeat;
+    /* background-position-y: 50%; */
     background-size: cover;
-    height: 78%;
+    height: 100%;
   }
-
   .navbar-burger {
     align-items: flex-start;
     margin-top: 80px;
@@ -764,7 +775,7 @@ details summary {
   .about-container-responsive {
     /* border: 2px solid red; */
     display: contents;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     color: white;
     font-family: "fondamento", cursive;
@@ -784,5 +795,65 @@ details summary {
     font-family: "fondamento", cursive;
     font-weight: 400;
     font-style: regular italic;
+    font-size: 25px;
   }
+
+  .galery-container {
+  display: none;
+  }
+
+  .galery-container-responsive {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+   .galery-container-responsive img {
+    padding: 10px;
+   height: 550px;
+        width: 400px;
+   }  
+
+   .information-container-responsive {
+    display: flex;
+    flex-direction: column;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .information-container-responsive h2 {
+    text-decoration: underline;
+    margin-top: 30px;
+   }
+
+   .information-container {
+    display: none;
+   }
+
+   .adresse-content-responsive p {
+    margin-top: 30px;
+    
+   }
+
+   .map-content-responsive {
+    height: 150px;
+        /* border: 2px solid blue; */
+        align-content: center;
+   }
+
+   .horaires-content-responsive p{
+    /* border: 2px solid green; */
+    margin-top: 30px;
+   }
+
+   .hygiène-content-responsive p {
+    margin-top: 30px;
+   }
+   .hygiène-content-responsive a {
+    text-decoration: underline;
+   }
 }
