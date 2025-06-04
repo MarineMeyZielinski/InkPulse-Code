@@ -46,6 +46,13 @@ main {
   /* height: 100vw; */
 }
 
+.home-container-faq {
+  background-image: url(IMAGES/marble-black.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-size: cover;
+  height: auto;
+}
 /* Bannière avec le slogan */
 .slogan {
   background: black;
@@ -125,7 +132,7 @@ main {
   display: flex;
   place-self: anchor-center;
   margin-top: 55px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .about-container-responsive {
@@ -136,7 +143,7 @@ main {
   display: inline-grid;
   margin-right: 20px;
   margin-top: 95px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .photos-gauche img {
@@ -156,7 +163,7 @@ main {
   display: flex;
   flex-direction: column;
   block-size: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .biography-text {
@@ -215,7 +222,7 @@ main {
   display: inline-grid;
   margin-left: 20px;
   margin-top: 95px;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 
 .photos-droite img {
@@ -493,6 +500,10 @@ main {
   /* margin-top: 30px; */
 }
 
+.info-contact-container-responsive {
+  display: none;
+}
+
 .contact-title {
   font-size: 35px;
   text-align: center;
@@ -521,6 +532,10 @@ main {
   align-items: center;
   /* border: 2px solid red; */
   text-decoration: none;
+}
+
+.click-to-contact-responsive {
+  display: none;
 }
 
 .click-to-contact .button {
@@ -675,12 +690,13 @@ details summary {
     padding: 0px;
     /* height: 3%; */
   }
-  
+
   main {
-    border: 5px solid red;
-  height: 95%;
-  margin-top: -60px;
+    /* border: 5px solid red; */
+    height: 95%;
+    margin-top: -60px;
   }
+
   .home-container {
     background-image: url(IMAGES/marble-black-responsive.png);
     background-repeat: repeat;
@@ -688,6 +704,7 @@ details summary {
     background-size: cover;
     height: 100%;
   }
+
   .navbar-burger {
     align-items: flex-start;
     margin-top: 80px;
@@ -799,7 +816,7 @@ details summary {
   }
 
   .galery-container {
-  display: none;
+    display: none;
   }
 
   .galery-container-responsive {
@@ -808,13 +825,13 @@ details summary {
 
   }
 
-   .galery-container-responsive img {
-    padding: 10px;
-   height: 550px;
-        width: 400px;
-   }  
+  .galery-container-responsive img {
+    padding: 10px 25px;
+    height: 550px;
+    width: 400px;
+  }
 
-   .information-container-responsive {
+  .information-container-responsive {
     display: flex;
     flex-direction: column;
     font-family: "fondamento", cursive;
@@ -823,37 +840,124 @@ details summary {
     color: white;
     font-size: 25px;
     text-align: center;
-   }
+  }
 
-   .information-container-responsive h2 {
+  .information-container-responsive h2 {
     text-decoration: underline;
     margin-top: 30px;
-   }
+  }
 
-   .information-container {
+  .information-container {
     display: none;
-   }
+  }
 
-   .adresse-content-responsive p {
+  .adresse-content-responsive p {
     margin-top: 30px;
-    
-   }
 
-   .map-content-responsive {
+  }
+
+  .map-content-responsive {
     height: 150px;
-        /* border: 2px solid blue; */
-        align-content: center;
-   }
+    /* border: 2px solid blue; */
+    align-content: center;
+  }
 
-   .horaires-content-responsive p{
+  .horaires-content-responsive p {
     /* border: 2px solid green; */
     margin-top: 30px;
-   }
+  }
 
-   .hygiène-content-responsive p {
+  .hygiène-content-responsive p {
     margin-top: 30px;
-   }
-   .hygiène-content-responsive a {
+  }
+
+  .hygiène-content-responsive a {
     text-decoration: underline;
-   }
+  }
+
+  .info-contact-container {
+    display: none;
+  }
+
+  .click-to-contact {
+    display: none;
+  }
+
+  .info-contact-container-responsive {
+    display: flex;
+    flex-direction: column;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .contact-title-responsive {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+  .click-to-contact-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .click-to-contact-responsive img {
+    height: 150px;
+    width: 150px;
+
+  }
+
+  .click-to-contact-responsive .button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.514);
+    transition: background 0.3s;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  .item-responsive {
+    padding: 30px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body-faq {
+    height: 900px;
+  }
+
+  .home-container-faq {
+    background-color: rgba(0, 0, 0, 0.741);
+    background-image: none;
+  }
+
+  .faq-container {
+
+  }
+
+  details {
+    justify-content: right;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+     line-height: 36px;
+     width: 94%;
+  }
+
+  summary {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
 }
