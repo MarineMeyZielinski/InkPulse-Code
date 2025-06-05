@@ -149,12 +149,12 @@ h1 {
 @media screen and (max-width: 412px) {
 
   .home-container {
-  background-image: url(IMAGES/coeur-gants.jpg);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-size: cover;
-  height: 100%;
-}
+    background-image: url(IMAGES/coeur-gants.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: cover;
+    height: 100%;
+  }
 
   .navbar-burger {
     align-items: flex-start;
@@ -244,4 +244,99 @@ h1 {
 
 }
 
-@media screen and (max-width: 820px) {}
+@media screen and (max-width: 768px) {
+
+  /* Background de la page d' acceuil */
+  .home-container {
+    background-image: url(IMAGES/coeur-gants.jpg);
+    background-repeat: no-repeat;
+    /* background-position-y: 50%; */
+    background-size: cover;
+    height: 125%;
+  }
+
+  /* Menu burger */
+  .navbar-burger {
+    align-items: flex-start;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .navbar-desktop {
+    display: none;
+  }
+
+  /* Position du menu burger */
+  .navbar-burger ul {
+    /* display: none; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 120px;
+    /* Ajuste selon la hauteur de ton header */
+    left: 0;
+    z-index: 1000;
+    margin-left: -8460px;
+    height: 640px;
+    transition: margin-left 0.8s;
+  }
+
+  /* Slogan " Votre corps, votre histoire, votre encore" */
+  .slogan {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .slogan p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  /* Icone des drapeaux de changement de langues */
+  .lang-icons {
+    display: none;
+  }
+
+  /*  */
+  #menu-toggle:checked+.menu-icon+.navbar-burger ul {
+    /* display: flex; */
+    margin-left: 0;
+  }
+
+  /* Liste du menu burger */
+  .navbar-burger ul li {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 17px;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-burger ul li a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+  }
+
+/* Image des drapeux de changement de langues */
+  .navbar-burger-lang img {
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+  }
+
+  /* Titre Ink Pulse */
+  main h1 {
+    font-size: 3rem;
+    margin-right: 0;
+    text-align: center;
+  }
+
+}

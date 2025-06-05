@@ -1008,7 +1008,7 @@ details summary {
   /* Conteneur de la page FAQ responsive */
   .faq-container {}
 
-  
+
   details {
     justify-content: right;
     font-size: 25px;
@@ -1025,4 +1025,18 @@ details summary {
     margin-bottom: 30px;
   }
 
+  @media screen and (max-width: 1287px) {
+
+
+
+
+
+
+
+
+
+
+
+    
+  }
 }
