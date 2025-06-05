@@ -112,7 +112,7 @@ a:active {
 }
 
 main {
-  height: 83%;
+  height: 80%;
   display: flex;
   align-items: flex-end;
   justify-self: right;
@@ -326,7 +326,7 @@ h1 {
     width: 100%;
   }
 
-/* Image des drapeux de changement de langues */
+  /* Image des drapeux de changement de langues */
   .navbar-burger-lang img {
     height: 32px;
     width: 32px;
@@ -338,6 +338,162 @@ h1 {
     font-size: 3rem;
     margin-right: 0;
     text-align: center;
+    overflow: hidden;
+
   }
 
+}
+
+@media screen and (min-width: 1496px) and (max-width: 1600px) {
+
+  html {
+    overflow-y: hidden;
+  }
+
+  .fondamento-regular {
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:active {
+    color: black;
+  }
+
+  main {
+    height: 81%;
+  }
+
+  .home-container {
+    background-image: url(IMAGES/gants_16_9.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+  }
+
+  .slogan {
+    background: black;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+  }
+
+  .slogan p {
+    width: max-content;
+    margin-left: auto;
+
+
+  }
+
+  .navbar-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .navbar-desktop ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+  }
+
+  .navbar-desktop ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: background 0.3s;
+    font-size: 24px;
+  }
+
+  .navbar-desktop ul li a:hover,
+  .navbar-desktop ul li a.active {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .lang-icons {
+    width: max-content;
+    float: right;
+    margin-right: 40px;
+    margin-left: auto;
+  }
+
+  .lang-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  main {
+    height: 83%;
+    display: flex;
+    align-items: flex-end;
+    justify-self: right;
+  }
+
+  h1 {
+    justify-self: center;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    font-size: 5rem;
+    margin-right: 300px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .menu-icon span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
 }
