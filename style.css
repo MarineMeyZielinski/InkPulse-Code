@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Police d'écriture */
 .fondamento-regular {
   font-family: "Fondamento", cursive;
   font-weight: 400;
@@ -43,9 +44,9 @@ main {
   background-position-y: 50%;
   background-size: cover;
   height: 100vh;
-  /* height: 100vw; */
 }
 
+/* Background page FAQ */
 .home-container-faq {
   background-image: url(IMAGES/marble-black.png);
   background-repeat: no-repeat;
@@ -53,6 +54,7 @@ main {
   background-size: cover;
   height: auto;
 }
+
 /* Bannière avec le slogan */
 .slogan {
   background: black;
@@ -101,6 +103,8 @@ main {
   font-size: 24px;
 }
 
+/* Changement de couleur des boutons de la barre de 
+navigation au survol  */
 .navbar-desktop ul li a:hover,
 .navbar-desktop ul li a.active {
   color: black;
@@ -108,6 +112,7 @@ main {
   text-decoration: underline;
 }
 
+/* Barre de navigation pour le menu burger */
 .navbar-burger {
   display: none;
 }
@@ -135,10 +140,12 @@ main {
   /* border: 2px solid white; */
 }
 
+/* Mode responsive conteuneur de la page Qui Sommes Nous */
 .about-container-responsive {
   display: none;
 }
 
+/* Photos de gauche en page Qui Sommes Nous */
 .photos-gauche {
   display: inline-grid;
   margin-right: 20px;
@@ -146,12 +153,15 @@ main {
   /* border: 2px solid green; */
 }
 
+/* Paramètre des images des photos de gauche
+de la page Qui Sommes Nous */
 .photos-gauche img {
   border-radius: 15px;
   padding: 5px 0px;
   box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.429);
 }
 
+/* Texte de la page Qui Sommes Nous */
 .biography-content {
   color: white;
   font-family: "fondamento", cursive;
@@ -172,28 +182,31 @@ main {
   margin-top: 30px;
 }
 
+/* Biographie de Joy */
 .biography-content-1 {
   width: 50%;
   height: 250px;
   text-align: center;
   font-size: 23px;
-  border-right: 2px solid white;
+  border-right: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid white;
   border-radius: 10px;
   padding: 15px;
 }
 
+/* Biographie de Ronnie */
 .biography-content-2 {
   width: 50%;
   height: 250px;
   text-align: center;
   font-size: 23px;
   border-bottom: 2px solid rgb(255, 255, 255);
-  border-left: 2px solid white;
+  border-left: 2px solid rgb(255, 255, 255);
   padding: 15px;
   border-radius: 10px;
 }
 
+/*  Biographie de Travis */
 .biography-content-3 {
   width: 50%;
   height: 250px;
@@ -206,6 +219,7 @@ main {
   padding: 15px;
 }
 
+/* Biographie de Billy */
 .biography-content-4 {
   width: 50%;
   height: 250px;
@@ -218,6 +232,7 @@ main {
   padding: 15px;
 }
 
+/* Photos droite de la page Qui Sommes Nous */
 .photos-droite {
   display: inline-grid;
   margin-left: 20px;
@@ -225,12 +240,14 @@ main {
   /* border: 2px solid purple; */
 }
 
+/* Paramètre photo de droite de la page Qui Sommes Nous */
 .photos-droite img {
   border-radius: 15px;
   padding: 5px 0px;
   box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.429);
 }
 
+/* Titre de la page Qui Sommes Nous */
 #team {
   color: white;
   font-family: "fondamento", cursive;
@@ -277,13 +294,14 @@ main {
 .galery-container>div {
   /* border: 1px solid red; */
   overflow: hidden;
-  /* box-shadow: 5px 5px 7px rgba(40, 94, 107, 0.452); */
 }
 
+/* Conteneur de la galerie en mode responsive */
 .galery-container-responsive {
   display: none;
 }
 
+/* Emplacement des images de la mosaïque des 3 galeries */
 .img-1 {
 
   grid-column: 1 / 2;
@@ -338,19 +356,15 @@ main {
   /* border: 2px solid red; */
   display: flex;
   place-self: anchor-center;
-  /* margin-top: 55px; */
-  /* margin-top: 100px; */
-  /* height: 100%; */
+  margin-top: 45px;
 }
 
+/* Conteneur de la page d'information en mode responsive */
 .information-container-responsive {
   display: none;
 }
 
-.test {
-  height: 18%;
-}
-
+/* Contenu de " Où nous trouver" page infos pratiques */
 .adresse-content {
   /* border: 2px solid green; */
   border-right: 3px solid white;
@@ -363,12 +377,14 @@ main {
   width: 500px;
 }
 
+/* Titre "Où nous trouver" page infos pratiques */
 .adresse-content h2 {
   text-decoration: underline;
   justify-self: center;
   font-size: 35px;
 }
 
+/* Texte section "Où nous trouver" page infos pratiques */
 .adresse-content p {
   height: 201px;
   /* border: 2px solid pink; */
@@ -376,6 +392,7 @@ main {
   text-align: center;
 }
 
+/* Ping où nous trouver */
 .map-content {
   /* border: 2px solid yellow; */
   height: 300px;
@@ -383,6 +400,7 @@ main {
   justify-self: center;
 }
 
+/* Contenu de la section Horaires page infos pratiques*/
 .horaires-content {
   /* border: 2px solid blue; */
   border-right: 3px solid white;
@@ -395,6 +413,7 @@ main {
   width: 550px;
 }
 
+/* Titre horaires page infos pratiques*/
 .horaires-content h2 {
   justify-self: anchor-center;
   text-decoration: underline;
@@ -402,6 +421,7 @@ main {
   font-size: 35px;
 }
 
+/* Texte horaires page infos pratiques */
 .horaires-content p {
   /* border: 2px solid white; */
   align-content: center;
@@ -412,6 +432,7 @@ main {
   font-size: 30px;
 }
 
+/* Contenu hygiène et soins */
 .hygiène-content {
   /* border: 2px solid violet; */
   color: white;
@@ -423,6 +444,7 @@ main {
   width: 500px;
 }
 
+/* Titre hygiène et soins */
 .hygiène-content h2 {
   justify-self: anchor-center;
   text-decoration: underline;
@@ -430,6 +452,7 @@ main {
   font-size: 35px;
 }
 
+/* Texte hygiène et soins */
 .hygiène-content p {
   /* border: 2px solid rgb(0, 255, 51); */
   align-content: center;
@@ -443,6 +466,7 @@ main {
   text-decoration: underline;
 }
 
+/* Conteneur de la page de Cicatrisation */
 .cicatrisation-container {
   /* border: 2px solid green; */
   color: white;
@@ -469,6 +493,7 @@ main {
   font-size: 25px;
 }
 
+/* Contenu de la page de ciatrisation */
 .cicatrisation-content {
   /* border: 2px solid blue; */
   font-size: 25px;
@@ -488,6 +513,8 @@ main {
   margin-top: 30px;
 }
 
+
+/* Conteneur de la page contacts */
 .info-contact-container {
   color: white;
   font-family: "fondamento", cursive;
@@ -500,16 +527,19 @@ main {
   /* margin-top: 30px; */
 }
 
+/* Conteneur de la page contcat mode responsive */
 .info-contact-container-responsive {
   display: none;
 }
 
+/* Titre de la page contcat */
 .contact-title {
   font-size: 35px;
   text-align: center;
   text-decoration: underline;
 }
 
+/* Texte de la page contac */
 .info-contact-content p {
   font-size: 30px;
   text-align: center;
@@ -518,6 +548,7 @@ main {
   margin-right: 50px;
 }
 
+/* Grid des boutons pour contacter via mail et téléphone */
 .click-to-contact {
   color: rgb(0, 0, 0);
   font-family: "fondamento", cursive;
@@ -534,10 +565,12 @@ main {
   text-decoration: none;
 }
 
+/*/* Grid des boutons pour contcater via mail et téléphones mode responsive */
 .click-to-contact-responsive {
   display: none;
 }
 
+/* Classe des boutons  */
 .click-to-contact .button {
   padding: 10px 15px;
   border-radius: 10px;
@@ -556,6 +589,8 @@ main {
   height: 100px;
 }
 
+/* Grid emplacement des boutons et icones de 
+reseaux sociaux page contact */
 .item-1 {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
@@ -599,7 +634,7 @@ main {
 }
 
 
-
+/* Pied de page */
 footer {
   color: white;
   font-family: "fondamento", cursive;
@@ -621,6 +656,7 @@ footer img {
   cursor: pointer;
 }
 
+/* Titre ed la page FAQ */
 .faq-title {
   color: white;
   font-family: "fondamento", cursive;
@@ -632,6 +668,7 @@ footer img {
   margin-top: 30px;
 }
 
+/* Présentation de la FAQ */
 details {
   color: white;
   font-family: "fondamento", cursive;
@@ -645,10 +682,12 @@ details {
   font-size: 20px;
 }
 
+/* Questions de la FAQ */
 details summary {
   padding: 15px;
 }
 
+/* Conteneur des mentions légales */
 .mentions-container {
   color: white;
   font-family: "fondamento", cursive;
@@ -658,6 +697,8 @@ details summary {
   text-decoration: underline;
   font-size: 15px;
 }
+
+/* MENU BURGER */
 
 #menu-toggle {
   display: none;
@@ -679,6 +720,7 @@ details summary {
   transition: 0.5s;
 }
 
+/* Media Query pour Samsung Galaxy S20 Ultra */
 @media screen and (max-width: 412px) {
 
   body {
@@ -697,6 +739,7 @@ details summary {
     margin-top: -60px;
   }
 
+  /* Background marbre */
   .home-container {
     background-image: url(IMAGES/marble-black-responsive.png);
     background-repeat: repeat;
@@ -705,6 +748,7 @@ details summary {
     height: 100%;
   }
 
+  /* Barre de navigation version menu burger */
   .navbar-burger {
     align-items: flex-start;
     margin-top: 80px;
@@ -716,10 +760,12 @@ details summary {
     z-index: 1001;
   }
 
+  /* Barre de navigation version pc */
   .navbar-desktop {
     display: none;
   }
 
+  /* Liste du menu burger */
   .navbar-burger ul {
     /* display: none; */
     flex-direction: column;
@@ -736,6 +782,7 @@ details summary {
     transition: margin-left 0.5s;
   }
 
+  /* Slogan */
   .slogan {
     font-size: 24px;
     justify-content: center;
@@ -746,15 +793,18 @@ details summary {
     padding: 5px;
   }
 
+  /* Drapeau de changement de langue du site */
   .lang-icons {
     display: none;
   }
 
+  /*  */
   #menu-toggle:checked+.menu-icon+.navbar-burger ul {
     /* display: flex; */
     margin-left: 0;
   }
 
+  /* Mise en place de la liste du menu burger */
   .navbar-burger ul li {
     text-align: center;
     width: 100%;
@@ -769,26 +819,19 @@ details summary {
     width: 100%;
   }
 
-  /* .navbar-burger ul img  {
-    padding: 8px;
-    height: 32px;
-    width: 32px;
-  } */
-
-  .navbar-burger-lang {
-    /* border: 2px solid green; */
-  }
-
+  /* Icône de changement de langue menu burger */
   .navbar-burger-lang img {
     height: 32px;
     width: 32px;
     margin: 10px;
   }
 
+  /* Conteneur de la page Qui sommes nous */
   .about-container {
     display: none;
   }
 
+  /* Conteneur de la page qui sommes nous responsive */
   .about-container-responsive {
     /* border: 2px solid red; */
     display: contents;
@@ -800,10 +843,12 @@ details summary {
     font-style: regular italic;
   }
 
+  /* Titre page Qui sommes nous responsive */
   .about-container-responsive h2 {
     margin-bottom: 60px;
   }
 
+  /* Contenu page Qui Sommes Nous responsive */
   .content-responsive {
     display: inline-table;
     margin-top: 80px;
@@ -815,22 +860,26 @@ details summary {
     font-size: 25px;
   }
 
+  /* Conteneur des 3 galeries  */
   .galery-container {
     display: none;
   }
 
+  /* Conteneur des 3 galeries responsive */
   .galery-container-responsive {
     display: flex;
     flex-direction: column;
 
   }
 
+  /* Images des 3 galeries responsive */
   .galery-container-responsive img {
     padding: 10px 25px;
     height: 550px;
     width: 400px;
   }
 
+  /*  Conteneur de la page d'infos pratqiues responsive */
   .information-container-responsive {
     display: flex;
     flex-direction: column;
@@ -842,31 +891,36 @@ details summary {
     text-align: center;
   }
 
+  /*  Titre de la page d'infos pratqiues responsive */
   .information-container-responsive h2 {
     text-decoration: underline;
     margin-top: 30px;
   }
 
+  /*  Conteneur de la page d'infos pratqiues */
   .information-container {
     display: none;
   }
 
+  /* Contenu Où nous trouver page infos pratiques responsive */
   .adresse-content-responsive p {
     margin-top: 30px;
 
   }
-
+/* Ping où nous trouver page d'infos pratiques responsive */
   .map-content-responsive {
     height: 150px;
     /* border: 2px solid blue; */
     align-content: center;
   }
 
+  /* Contenu horaires page infos pratiques responsive */
   .horaires-content-responsive p {
     /* border: 2px solid green; */
     margin-top: 30px;
   }
 
+  /* Contenu hygiène et soins page infos pratiques responsive */
   .hygiène-content-responsive p {
     margin-top: 30px;
   }
@@ -875,14 +929,17 @@ details summary {
     text-decoration: underline;
   }
 
+  /* Conteneur de la page contact */
   .info-contact-container {
     display: none;
   }
 
+  /* Boutons et icones de contact */
   .click-to-contact {
     display: none;
   }
 
+  /* Conteneur de la page contcat responsive */
   .info-contact-container-responsive {
     display: flex;
     flex-direction: column;
@@ -894,12 +951,14 @@ details summary {
     text-align: center;
   }
 
+  /* Titre page contact responsive */
   .contact-title-responsive {
     font-size: 30px;
     text-decoration: underline;
     margin-bottom: 20px;
   }
 
+  /* Butons */
   .click-to-contact-responsive {
     display: flex;
     flex-direction: column;
@@ -907,12 +966,14 @@ details summary {
     margin-top: 70px;
   }
 
+  /* Images reseaux sociaux page contcat */
   .click-to-contact-responsive img {
     height: 150px;
     width: 150px;
 
   }
 
+  /* Mise en place des boutons de la page contcat responsive */
   .click-to-contact-responsive .button {
     padding: 10px 15px;
     border-radius: 10px;
@@ -922,28 +983,32 @@ details summary {
     text-decoration: underline;
   }
 
+
   .item-responsive {
     padding: 30px;
   }
 
+  /* Footer responsive */
   footer {
     display: flex;
     flex-direction: column;
   }
 
+  /* Body de la page FAQ responsive */
   .body-faq {
     height: 900px;
   }
 
+  /* Background de la page FAQ responsive */
   .home-container-faq {
     background-color: rgba(0, 0, 0, 0.741);
     background-image: none;
   }
 
-  .faq-container {
+  /* Conteneur de la page FAQ responsive */
+  .faq-container {}
 
-  }
-
+  
   details {
     justify-content: right;
     font-size: 25px;
@@ -951,8 +1016,8 @@ details summary {
     margin-left: 10px;
     margin-top: 30px;
     /* margin-bottom: 20px; */
-     line-height: 36px;
-     width: 94%;
+    line-height: 36px;
+    width: 94%;
   }
 
   summary {
