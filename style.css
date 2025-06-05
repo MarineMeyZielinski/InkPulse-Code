@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -44,6 +44,7 @@ main {
   background-position-y: 50%;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 /* Background page FAQ */
@@ -645,6 +646,7 @@ footer {
   /* border: 2px solid blue; */
   justify-content: space-around;
   align-items: anchor-center;
+  padding: 5px;
 
 
 }
@@ -654,6 +656,11 @@ footer img {
   height: 50px;
   margin-left: -320px;
   cursor: pointer;
+}
+
+
+.faq-container {
+  height: auto;
 }
 
 /* Titre ed la page FAQ */
@@ -1024,19 +1031,317 @@ details summary {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
-  @media screen and (max-width: 1287px) {
-
+}
 
 
+  @media screen and (max-width: 768px) {
+body {
+    height: auto;
+  }
+
+  header {
+    text-align: center;
+    padding: 0px;
+    /* height: 3%; */
+  }
+
+  main {
+    /* border: 5px solid red; */
+    height: 95%;
+    margin-top: -60px;
+  }
+
+  /* Background marbre */
+  .home-container {
+    background-image: url(IMAGES/marble-black-responsive.png);
+    background-repeat: repeat;
+    /* background-position-y: 50%; */
+    background-size: cover;
+    height: 100%;
+  }
+
+  /* Barre de navigation version menu burger */
+  .navbar-burger {
+    align-items: flex-start;
+    margin-top: 80px;
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    z-index: 1001;
+  }
+
+  /* Barre de navigation version pc */
+  .navbar-desktop {
+    display: none;
+  }
+
+  /* Liste du menu burger + position */
+  .navbar-burger ul {
+    /* display: none; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 120px;
+    /* Ajuste selon la hauteur de ton header */
+    left: 0;
+    z-index: 1000;
+    margin-left: -800px;
+    height: 640px;
+    transition: margin-left 0.8s;
+  }
+
+  /* Slogan */
+  .slogan {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .slogan p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  /* Drapeau de changement de langue du site */
+  .lang-icons {
+    display: none;
+  }
+
+  /*  */
+  #menu-toggle:checked+.menu-icon+.navbar-burger ul {
+    /* display: flex; */
+    margin-left: 0;
+  }
+
+  /* Mise en place de la liste du menu burger */
+  .navbar-burger ul li {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 17px;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-burger ul li a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  /* Icône de changement de langue menu burger */
+  .navbar-burger-lang img {
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+  }
+
+  /* Conteneur de la page Qui sommes nous */
+  .about-container {
+    display: none;
+  }
+
+  /* Conteneur de la page qui sommes nous responsive */
+  .about-container-responsive {
+    /* border: 2px solid red; */
+    display: contents;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: white;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+  }
 
 
+  /* .about-container-responsive img {
+    height: 50px;
+    width: 100px;
+  } */
+  /* Titre page Qui sommes nous responsive */
+  .about-container-responsive h2 {
+    margin-bottom: 60px;
+  }
+
+  /* Contenu page Qui Sommes Nous responsive */
+  .content-responsive {
+    display: inline-table;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    font-size: 25px;
+  }
+
+  /* Conteneur des 3 galeries  */
+  .galery-container {
+    display: none;
+  }
+
+  /* Conteneur des 3 galeries responsive */
+  .galery-container-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* Images des 3 galeries responsive */
+  .galery-container-responsive img {
+    padding: 10px 2px;
+    height: 550px;
+    width: 400px;
+  }
+
+  /*  Conteneur de la page d'infos pratqiues responsive */
+  .information-container-responsive {
+    display: flex;
+    flex-direction: column;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*  Titre de la page d'infos pratqiues responsive */
+  .information-container-responsive h2 {
+    text-decoration: underline;
+    margin-top: 30px;
+  }
+
+  /*  Conteneur de la page d'infos pratqiues */
+  .information-container {
+    display: none;
+  }
+
+  /* Contenu Où nous trouver page infos pratiques responsive */
+  .adresse-content-responsive p {
+    margin-top: 30px;
+
+  }
+/* Ping où nous trouver page d'infos pratiques responsive */
+  .map-content-responsive {
+    height: 150px;
+    /* border: 2px solid blue; */
+    align-content: center;
+  }
+
+  /* Contenu horaires page infos pratiques responsive */
+  .horaires-content-responsive p {
+    /* border: 2px solid green; */
+    margin-top: 30px;
+  }
+
+  /* Contenu hygiène et soins page infos pratiques responsive */
+  .hygiène-content-responsive p {
+    margin-top: 30px;
+  }
+
+  .hygiène-content-responsive a {
+    text-decoration: underline;
+  }
+
+  /* Conteneur de la page contact */
+  .info-contact-container {
+    display: none;
+  }
+
+  /* Boutons et icones de contact */
+  .click-to-contact {
+    display: none;
+  }
+
+  /* Conteneur de la page contcat responsive */
+  .info-contact-container-responsive {
+    display: flex;
+    flex-direction: column;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /* Titre page contact responsive */
+  .contact-title-responsive {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+  /* Butons */
+  .click-to-contact-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  /* Images reseaux sociaux page contcat */
+  .click-to-contact-responsive img {
+    height: 150px;
+    width: 150px;
+
+  }
+
+  /* Mise en place des boutons de la page contcat responsive */
+  .click-to-contact-responsive .button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.514);
+    transition: background 0.3s;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  .item-responsive {
+    padding: 30px;
+  }
+
+  /* Footer responsive */
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Body de la page FAQ responsive */
+  .body-faq {
+    height: 900px;
+  }
+
+  /* Background de la page FAQ responsive */
+  .home-container-faq {
+    /* background-color: rgba(0, 0, 0, 0.741);
+    background-image: none; */
+    background-attachment: fixed;
+  }
+
+  /* Conteneur de la page FAQ responsive */
+  .faq-container {}
 
 
+  details {
+    justify-content: right;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+    line-height: 36px;
+    width: 94%;
+  }
 
-
-
-
-    
+  summary {
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
