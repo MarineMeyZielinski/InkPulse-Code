@@ -13,7 +13,7 @@
 
 html {
   height: 100%;
-    background-image: url(IMAGES/marble-black.png);
+    background-image: url(/IMAGES/marble-black.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-size: cover;
@@ -49,7 +49,7 @@ main {
 
 /* Background */
 .home-container {
-  background-image: url(IMAGES/marble-black.png);
+  background-image: url(/IMAGES/marble-black.png);
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: cover;
@@ -59,7 +59,7 @@ main {
 
 /* Background page FAQ */
 .home-container-faq {
-  background-image: url(IMAGES/marble-black.png);
+  background-image: url(/IMAGES/marble-black.png);
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: cover;
@@ -758,7 +758,7 @@ details summary {
 
   /* Background marbre */
   .home-container {
-    background-image: url(IMAGES/marble-black-responsive.png);
+    background-image: url(/IMAGES/marble-black-responsive.png);
     background-repeat: repeat;
     /* background-position-y: 50%; */
     background-size: cover;
@@ -1064,7 +1064,7 @@ details summary {
 
   /* Background marbre */
   .home-container {
-    background-image: url(IMAGES/marble-black-responsive.png);
+    background-image: url(/IMAGES/marble-black-responsive.png);
     background-repeat: repeat;
     /* background-position-y: 50%; */
     background-size: cover;
@@ -1396,7 +1396,7 @@ details summary {
 
   html {
     height: 100%;
-    background-image: url(IMAGES/marble-black.png);
+    background-image: url(/IMAGES/marble-black.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-size: cover;
@@ -1406,7 +1406,7 @@ details summary {
 
   /* Background */
   .home-container {
-    background-image: url(IMAGES/marble-black.png);
+    background-image: url(/IMAGES/marble-black.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
     /* background-size: 100%; */
