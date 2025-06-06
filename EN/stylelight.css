@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondamento-regular {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: black;
+}
+
+.home-container {
+  background-image: url(/IMAGES/gants_16_9.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.slogan {
+  background: black;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+}
+
+.slogan p {
+  width: max-content;
+  margin-left: auto;
+
+
+}
+
+.navbar-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.navbar-desktop ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+}
+
+.navbar-desktop ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  transition: background 0.3s;
+  font-size: 24px;
+}
+
+.navbar-desktop ul li a:hover,
+.navbar-desktop ul li a.active {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+.lang-icons {
+  width: max-content;
+  float: right;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.lang-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-self: right;
+}
+
+h1 {
+  justify-self: center;
+  font-family: "fondamento", cursive;
+  font-weight: 400;
+  font-style: regular italic;
+  font-size: 5rem;
+  margin-right: 300px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.menu-icon span {
+  height: 4px;
+  width: 30px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 412px) {
+
+  .home-container {
+    background-image: url(IMAGES/coeur-gants.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: cover;
+    /* height: 100%; */
+  }
+
+  .navbar-burger {
+    align-items: flex-start;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .navbar-desktop {
+    display: none;
+  }
+
+  .navbar-burger ul {
+    /* display: none; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 120px;
+    /* Ajuste selon la hauteur de ton header */
+    left: 0;
+    z-index: 1000;
+    margin-left: -460px;
+    height: 640px;
+    transition: margin-left 0.5s;
+  }
+
+  .slogan {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .slogan p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .lang-icons {
+    display: none;
+  }
+
+  #menu-toggle:checked+.menu-icon+.navbar-burger ul {
+    /* display: flex; */
+    margin-left: 0;
+  }
+
+  .navbar-burger ul li {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 17px;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-burger ul li a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  /* .navbar-burger ul img  {
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+  } */
+
+  .navbar-burger-lang {
+    /* border: 2px solid green; */
+  }
+
+  .navbar-burger-lang img {
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+  }
+
+  main h1 {
+    font-size: 3rem;
+    margin-right: 0;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Background de la page d' acceuil */
+  .home-container {
+    background-image: url(IMAGES/coeur-gants.jpg);
+    background-repeat: no-repeat;
+    /* background-position-y: 50%; */
+    background-size: cover;
+    height: 125%;
+  }
+
+  /* Menu burger */
+  .navbar-burger {
+    align-items: flex-start;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .navbar-desktop {
+    display: none;
+  }
+
+  /* Position du menu burger */
+  .navbar-burger ul {
+    /* display: none; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 120px;
+    /* Ajuste selon la hauteur de ton header */
+    left: 0;
+    z-index: 1000;
+    margin-left: -8460px;
+    height: 640px;
+    transition: margin-left 0.8s;
+  }
+
+  /* Slogan " Votre corps, votre histoire, votre encore" */
+  .slogan {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .slogan p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  /* Icone des drapeaux de changement de langues */
+  .lang-icons {
+    display: none;
+  }
+
+  /*  */
+  #menu-toggle:checked+.menu-icon+.navbar-burger ul {
+    /* display: flex; */
+    margin-left: 0;
+  }
+
+  /* Liste du menu burger */
+  .navbar-burger ul li {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 17px;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-burger ul li a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  /* Image des drapeux de changement de langues */
+  .navbar-burger-lang img {
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+  }
+
+  /* Titre Ink Pulse */
+  main h1 {
+    font-size: 3rem;
+    margin-right: 0;
+    text-align: center;
+    overflow: hidden;
+
+  }
+
+}
+
+@media screen and (min-width: 1496px) and (max-width: 1600px) {
+
+  html {
+    overflow-y: hidden;
+  }
+
+  .fondamento-regular {
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:active {
+    color: black;
+  }
+
+  main {
+    height: 81%;
+  }
+
+  .home-container {
+    background-image: url(IMAGES/gants_16_9.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+  }
+
+  .slogan {
+    background: black;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+  }
+
+  .slogan p {
+    width: max-content;
+    margin-left: auto;
+
+
+  }
+
+  .navbar-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .navbar-desktop ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+  }
+
+  .navbar-desktop ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: background 0.3s;
+    font-size: 24px;
+  }
+
+  .navbar-desktop ul li a:hover,
+  .navbar-desktop ul li a.active {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .lang-icons {
+    width: max-content;
+    float: right;
+    margin-right: 40px;
+    margin-left: auto;
+  }
+
+  .lang-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  main {
+    height: 83%;
+    display: flex;
+    align-items: flex-end;
+    justify-self: right;
+  }
+
+  h1 {
+    justify-self: center;
+    font-family: "fondamento", cursive;
+    font-weight: 400;
+    font-style: regular italic;
+    font-size: 5rem;
+    margin-right: 300px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .menu-icon span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+}
